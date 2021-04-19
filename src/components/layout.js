@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from './footer'
 import Header from "./header"
+import Hero from './hero'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.scss'
 
@@ -27,7 +28,10 @@ const Layout = ({ children, pageInfo }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main>
+          <Hero />
+          {children}
+        </main>
         <Footer />
       </div>
     </>
