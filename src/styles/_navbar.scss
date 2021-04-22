@@ -1,14 +1,13 @@
 #site-navbar {
   background-color: $color-transparent-dark;
   z-index: 10;
+  transition: all 0.5s;
+  color: $color-primary-white;
   .title {
     color: $color-primary-white;
   }
   .nav-header-link {
     position: relative;
-    span {
-      color: $color-primary-white;
-    }
   }
   .nav-header-link::before {
     content: " ";
@@ -34,4 +33,9 @@
   a:hover {
     text-decoration: none;
   }
+}
+
+.expanded {
+  background-color: $color-transparent-extra-dark !important;
+  padding: 10px 30px !important;
 }
