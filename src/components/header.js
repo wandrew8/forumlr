@@ -10,7 +10,7 @@ const Header = ({ pageInfo }) => {
   console.log("Scrollhandler", useScrollHandler())
   return (
     <>
-      <Navbar expand="lg" variant="dark" id="site-navbar" fixed="top" className={useScrollHandler() > 100 ? "expanded" : ""}>
+      <Navbar expand="lg" bg="dark" variant="dark" id="site-navbar" fixed="top" className={useScrollHandler() > 100 ? "expanded" : ""}>
         <img width="70px" src={logo} alt="" />
         <Link to="/" className="nav-link">
           <Navbar.Brand className="title" as="span">Forum for Leadership and Reconciliation</Navbar.Brand>
@@ -18,35 +18,74 @@ const Header = ({ pageInfo }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/page-2" className="nav-header-link">
-              <Nav.Link as="span" eventKey="page-2">
+            <Link to="/" className="nav-header-link nav-header">
+              <Nav.Link as="span" eventKey="home">
                 Home
               </Nav.Link>
             </Link>
-            <Link to="/page-2" className="nav-header-link">
-              <Nav.Link as="span" eventKey="page-2">
+            <Link to="/about" className="nav-header-link nav-header">
+              <Nav.Link as="span" eventKey="about">
                 About
               </Nav.Link>
             </Link>
-            <Link to="/page-2" className="nav-header-link">
-              <Nav.Link as="span" eventKey="page-2">
-                News
+            <Link to="/blog" className="nav-header-link nav-header">
+              <Nav.Link as="span" eventKey="blog">
+                Blog
               </Nav.Link>
             </Link>
-            <NavDropdown title="ROM" id="collasible-nav-dropdown" className="nav-header-link">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+            <NavDropdown title="ROM" id="nav-dropdown-rom" className="nav-header-link">
+              <NavDropdown.Item>
+                <Link to="/rom" className="nav-dropdown-link">
+                  <Nav.Link as="span" eventKey="page-2">
+                    Home
+                  </Nav.Link>
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/" className="nav-dropdown-link">
+                  <Nav.Link as="span" eventKey="page-2">
+                    Home
+                  </Nav.Link>
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/" className="nav-dropdown-link">
+                  <Nav.Link as="span" eventKey="page-2">
+                    Home
+                  </Nav.Link>
+                </Link>
+              </NavDropdown.Item>
             </NavDropdown>
-            <Link to="/page-2" className="nav-header-link">
-              <Nav.Link as="span" eventKey="page-2">
+            <NavDropdown title="EDI" id="nav-dropdown-edi" className="nav-header-link">
+              <NavDropdown.Item>
+                <Link to="/edi" className="nav-dropdown-link">
+                  <Nav.Link as="span" eventKey="page-2">
+                    Home
+                  </Nav.Link>
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/edi" className="nav-dropdown-link">
+                  <Nav.Link as="span" eventKey="page-2">
+                    Home
+                  </Nav.Link>
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/edi" className="nav-dropdown-link">
+                  <Nav.Link as="span" eventKey="page-2">
+                    Home
+                  </Nav.Link>
+                </Link>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Link to="/contact" className="nav-header-link nav-header">
+              <Nav.Link as="span" eventKey="contact">
                 Contact
               </Nav.Link>
             </Link>
-            <Link to="/page-2" className="nav-header-link">
-              <Nav.Link as="span" eventKey="page-2">
+            <Link to="/donate" className="nav-header-link nav-header">
+              <Nav.Link as="span" eventKey="donate">
                 Donate
               </Nav.Link>
             </Link>

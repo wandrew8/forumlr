@@ -4,12 +4,12 @@ import Hero from '../components/hero'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const EdiPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="EDI" />
     <Hero />
-    <p>Welcome to About page</p>
+    <p>Welcome to EDI</p>
   </Layout>
 )
 
-export default AboutPage
+export default EdiPage

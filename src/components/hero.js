@@ -5,17 +5,17 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = ({ isFullSize }) => (
     <Jumbotron fluid className={isFullSize ? "hero-full-size hero" : "hero"}>
-        <Container fluid id="container-fluid">
         <StaticImage  
             src="../images/ocean.jpg"
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt=""
             style={{ marginBottom: `1.45rem` }}
-            />
+        />
+        <div id="container-fluid">
             <h1 className="display-3">Fluid jumbotron</h1>
             <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </Container>
+        </div>
     </Jumbotron>
 )
 

@@ -4,12 +4,12 @@ import Hero from '../components/hero'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const RomPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="ROM" />
     <Hero />
-    <p>Welcome to About page</p>
+    <p>Welcome to ROM</p>
   </Layout>
 )
 
-export default AboutPage
+export default RomPage

@@ -1,13 +1,21 @@
 #site-navbar {
-  background-color: $color-transparent-dark;
+  background-color: $color-transparent-dark !important;
   z-index: 10;
   transition: all 0.5s;
   color: $color-primary-white;
   .title {
     color: $color-primary-white;
   }
-  .nav-header-link {
+  .nav-header {
     position: relative;
+    a {
+      span {
+        color: $color-primary-dark;
+      }
+    }
+    span {
+      color: $color-primary-white;
+    }
   }
   .nav-header-link::before {
     content: " ";
@@ -26,6 +34,9 @@
     left: 0%;
   }
   .nav-header-link:hover {
+    .dropdown-toggle {
+      color: $color-transparent-light !important;
+    }
     span {
       color: $color-transparent-light;
     }
@@ -38,4 +49,14 @@
 .expanded {
   background-color: $color-transparent-extra-dark !important;
   padding: 10px 30px !important;
+}
+
+.dropdown-toggle {
+  color: $color-primary-white !important;
+}
+
+.nav-dropdown-link {
+  span {
+    color: $color-primary-dark !important;
+  }
 }

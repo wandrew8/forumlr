@@ -4,12 +4,12 @@ import Hero from '../components/hero'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const DonatePage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Donate" />
     <Hero />
-    <p>Welcome to About page</p>
+    <p>Please Donate Today</p>
   </Layout>
 )
 
-export default AboutPage
+export default DonatePage
