@@ -39,6 +39,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["300", "400", "500"],
+            },
+            {
+              family: "Open Sans",
+              variants: ["300", "700"],
+            },
+          ],
+        },
+      },
+    },
   ],
 }

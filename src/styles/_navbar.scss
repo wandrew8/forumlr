@@ -1,7 +1,7 @@
 #site-navbar {
   background-color: $color-transparent-dark !important;
   z-index: 10;
-  transition: all 0.5s;
+  transition: $transition-slow;
   color: $color-primary-white;
   .title {
     color: $color-primary-white;
@@ -52,6 +52,7 @@
 }
 
 .dropdown-toggle {
+  transition: $transition-slow;
   color: $color-primary-white !important;
 }
 
