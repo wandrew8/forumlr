@@ -1,20 +1,27 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { mediaBreakpoints } from '../media-queries/breakpoints'
 import { Collapse, NavDropdown, Navbar, Nav,  NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText} from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
 import logo from '../images/logo-transparent2.png'
 import useScrollHandler from '../hooks/useScrollHandler'
+import { useMediaQuery } from '../hooks/useMediaQuery'
 
 const Header = ({ pageInfo }) => {
-  console.log("Scrollhandler", useScrollHandler())
-  return (
+let isPageWide = useMediaQuery('(min-width: 600px)') 
+console.log(isPageWide)
+ return (
     <>
       <Navbar expand="lg" bg="dark" variant="dark" id="site-navbar" fixed="top" className={useScrollHandler() > 100 ? "expanded" : ""}>
         <img width="70px" src={logo} alt="" />
-        <Link to="/" className="nav-link">
-          <Navbar.Brand className="title" as="span">Forum for Leadership and Reconciliation</Navbar.Brand>
-        </Link>
+        {isPageWide ? 
+          <Link to="/" className="nav-link">
+            <Navbar.Brand className="title" as="span">Forum for Leadership and Reconciliation</Navbar.Brand>
+          </Link>
+          :
+          null
+        }
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>

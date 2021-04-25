@@ -10,7 +10,7 @@ const Hero = ({ isFullSize }) => (
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt=""
-            style={{ marginBottom: `1.45rem` }}
+            style={{ marginBottom: `1.45rem`, height: `500px`, objectFit: `cover` }}
         />
         <div className="mask"></div>
         <div id="container-fluid">
