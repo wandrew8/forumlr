@@ -1,6 +1,13 @@
 .home-page {
+  .heading {
+    padding: 3rem 1rem 0rem 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
   .heading-underline {
-    width: 300px;
-    border-bottom: solid 4px $color-primary;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: $color-primary;
+    margin: 2rem auto 2rem auto;
   }
 }

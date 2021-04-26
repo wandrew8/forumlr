@@ -9,13 +9,13 @@ import useScrollHandler from '../hooks/useScrollHandler'
 import { useMediaQuery } from '../hooks/useMediaQuery'
 
 const Header = ({ pageInfo }) => {
-let isPageWide = useMediaQuery('(min-width: 600px)') 
-console.log(isPageWide)
+let isPageWide = useMediaQuery(mediaBreakpoints['smallTablet']) 
  return (
     <>
       <Navbar expand="lg" bg="dark" variant="dark" id="site-navbar" fixed="top" className={useScrollHandler() > 100 ? "expanded" : ""}>
         <img width="70px" src={logo} alt="" />
-        {isPageWide ? 
+        {
+          isPageWide ? 
           <Link to="/" className="nav-link">
             <Navbar.Brand className="title" as="span">Forum for Leadership and Reconciliation</Navbar.Brand>
           </Link>

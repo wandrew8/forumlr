@@ -3,6 +3,7 @@
   height: 500px;
   padding: 0;
   margin: 0;
+  text-align: center;
   display: block;
   overflow: hidden;
   .mask {
@@ -28,6 +29,20 @@
   }
   img {
     object-fit: cover;
+  }
+  .hero-container {
+    height: 500px;
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    margin: 0 auto;
+    h1 {
+      color: $color-primary-white;
+      text-transform: uppercase;
+    }
   }
 }
 .content {
