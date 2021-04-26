@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Card } from "react-bootstrap"
 import Hero from '../components/hero'
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
@@ -34,7 +34,11 @@ const IndexPage = () => (
       </Row>
       <Row>
         <Col md={12} className="text-center">
-        <p>Forum for Leadership and Reconciliation (Forum) is a not-for-profit 501(c)(3) organization
+        <p 
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          >Forum for Leadership and Reconciliation (Forum) is a not-for-profit 501(c)(3) organization
             created in 2011 to support two existing projects: <strong>Renewing Our Minds (ROM) </strong>
             founded in 1999
             and <strong>Economics, Diplomacy and Integrity (EDI)</strong> started in 2006. Forum continues
@@ -47,8 +51,75 @@ const IndexPage = () => (
         </p>
         </Col>
       </Row>
+    <Row className="my-4">
+      <Col md={6}>
+        <Link to="/rom">
+          <div
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease">
+            <Card className="my-3 company-card card">
+            <StaticImage 
+              src="../images/rom-wide.png"
+              quality={95}
+              loading="lazy"
+              placeholder="none"
+              formats={["AUTO", "WEBP", "AVIF"]}
+              objectFit="cover"
+              style={{margin: `1rem auto 0rem auto`, height: `105px`, width: `300px`}}
+              alt="Renewing Our Minds" />
+              <Card.Body>
+                <Card.Title className="text-center card-title">Renewing Our Minds</Card.Title>
+                <hr/>
+                <Card.Text className="card-text">
+                      The Renewing Our Minds Gathering (ROM) has been a defining and
+                      life
+                      changing experience for hundreds of young participants from over 50 countries.
+                      Many
+                      alumni have emerged as leaders of influence and are today making a difference in
+                      the
+                      political, social and humanitarian and religious arenas of their countries.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </Link>
+      </Col>
+      <Col md={6}>
+        <Link to="/edi">
+          <div
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease">
+            <Card className="my-3 company-card card">
+            <StaticImage 
+              src="../images/edi-wide.png"
+              quality={95}
+              loading="lazy"
+              placeholder="none"
+              formats={["AUTO", "WEBP", "AVIF"]}
+              objectFit="cover"
+              style={{margin: `1rem auto 0rem auto`, height: `105px`, width: `300px`}}
+              alt="Economics, Diplomacy and Integrity" />
+              <Card.Body>
+                <Card.Title className="text-center card-title">Economics, Diplomacy and Integrity</Card.Title>
+                <hr/>
+                <Card.Text className="card-text">
+                  Economics, Diplomacy and Integrity (EDI) is designed to support
+                  professionals and students in the areas of economics, business and politics. We
+                  believe
+                  that the best way to fight against unhealthy rivalry among and within nations is
+                  to
+                  establish an economic and political community based on Jesus's life and
+                  principals.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </Link>
+      </Col>
+    </Row>
     </Container>
-   
   </Layout>
 )
 

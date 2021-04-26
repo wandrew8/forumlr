@@ -39,6 +39,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
