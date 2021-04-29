@@ -5,11 +5,16 @@ import { graphql } from "gatsby"
 
 export default function BlogPost ({ data }) {
     const { content, tags, title, created_at, cover_image } = data.allStrapiBlogPost.edges[0].node;
+    const paragraphs = content.split("\n");
   return (
     <Layout>
-      <div>
+      <div className="blog-template">
         <h1>{title}</h1>
-        <p>{content}</p>
+        {paragraphs.map(paragraph => {
+            return (
+                <p>{paragraph}</p>
+            )
+        })}
       </div>
     </Layout>
   )
