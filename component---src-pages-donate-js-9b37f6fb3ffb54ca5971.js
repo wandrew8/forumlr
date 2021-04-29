@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[166],{8778:function(e,t,a){"use strict";a.r(t);var l=a(7294),n=(a(5444),a(7837)),r=a(8815),u=a(3751);t.default=function(){return l.createElement(r.Z,null,l.createElement(u.Z,{title:"Donate"}),l.createElement(n.Z,null),l.createElement("p",null,"Please Donate Today"))}}}]);
+//# sourceMappingURL=component---src-pages-donate-js-9b37f6fb3ffb54ca5971.js.map

@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[213],{5300:function(e,t,l){"use strict";l.r(t);var a=l(7294),n=(l(5444),l(7837)),r=l(8815),u=l(3751);t.default=function(){return a.createElement(r.Z,null,a.createElement(u.Z,{title:"ROM"}),a.createElement(n.Z,null),a.createElement("p",null,"Welcome to ROM"))}}}]);
+//# sourceMappingURL=component---src-pages-rom-js-813ef4eb7117dd71364b.js.map

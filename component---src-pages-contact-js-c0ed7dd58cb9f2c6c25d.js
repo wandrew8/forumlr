@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[501],{262:function(e,t,n){"use strict";n.r(t);var a=n(7294),l=(n(5444),n(7837)),r=n(8815),u=n(3751);t.default=function(){return a.createElement(r.Z,null,a.createElement(u.Z,{title:"Contact"}),a.createElement(l.Z,null),a.createElement("p",null,"Contact us for more information!"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-c0ed7dd58cb9f2c6c25d.js.map

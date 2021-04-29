@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[28],{7240:function(e,t,l){"use strict";l.r(t);var a=l(7294),n=(l(5444),l(7837)),r=l(8815),u=l(3751);t.default=function(){return a.createElement(r.Z,null,a.createElement(u.Z,{title:"EDI"}),a.createElement(n.Z,null),a.createElement("p",null,"Welcome to EDI"))}}}]);
+//# sourceMappingURL=component---src-pages-edi-js-3eefefac8d30b95d2aa2.js.map
